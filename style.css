@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(245, 245, 36, 0.931);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    gap: 70px;
+    width: 600px;
+    height: 650px;
+    background-image:linear-gradient(360deg, rgba(245, 88, 167, 0.129), rgba(246, 37, 180, 0.524));
+    box-shadow: rgba(0, 0, 0, 0.634) 2px 10px 90px;
+    border-radius: 10%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: clamp(50px, 150px, 550px);
+    gap: 20px;
+    border: 2px solid black;
+}
+
+h1, h3, h4 {
+    text-align: center;
+    color: yellow;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: clamp(10px, 16px, 20px);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+}
+
+.song {
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    box-shadow: rgba(0, 0, 0, 0.396) 1px 8px 5px;
+    animation: rotate 15s infinite linear;
+}
+
+@keyframes rotate {
+    from{ transform:rotate(-360deg);}
+    to { transform: rotate(360deg);}
+}
+
+.title {
+    color: yellow;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-around;
+    width: 350px;
+}
+
+button {
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.251);
+    box-shadow: rgba(1, 1, 1, 0.456) 1px 1px 10px 2px;
+}
+
+.foward, .play, .back{
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-color: rgba(254, 138, 95, 0.322);
+}
+
+.foward{
+    background-image: url();
+}
+
+.back {
+    background-image: url();
+    background-size: 35px;
+}
